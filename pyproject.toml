@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "alx-higher-level-programming"
+version = "0.1.0"
+description = ""
+authors = ["Baki Jessy Justice Julien <bakijessy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pycodestyle = "^2.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
