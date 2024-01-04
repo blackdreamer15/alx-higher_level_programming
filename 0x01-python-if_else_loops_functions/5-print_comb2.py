@@ -7,4 +7,4 @@ for num in range(0, 100):
         if num == 99:
             print(f"{num:d}")
         else:
-            print(f"{0:d}".format(num), end=", ")
+            print("{0:d}".format(num), end=", ")
