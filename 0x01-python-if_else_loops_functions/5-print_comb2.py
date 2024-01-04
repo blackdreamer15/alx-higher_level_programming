@@ -2,9 +2,9 @@
 
 for num in range(0, 100):
     if num < 10:
-        print(f"0{num:d}", end=", ")
+        print("{0:d}".format(num), end=", ")
     else:
         if num == 99:
-            print(f"{num:d}")
+            print("{0:d}".format(num))
         else:
-            print(f"{num:d}", end=", ")
+            print(f"{0:d}".format(num), end=", ")
