@@ -7,5 +7,5 @@ def uppercase(str):
         if ascii_val > 96 and ascii_val < 123:
             ascii_val = ascii_val - 32
 
-        print(f"{chr(ascii_val)}", end="")
+        print("{}".format(chr(ascii_val)), end="")
     print()
