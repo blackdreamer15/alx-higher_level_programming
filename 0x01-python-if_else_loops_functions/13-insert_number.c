@@ -1,4 +1,4 @@
-#include "lists"
+#include "lists.h"
 
 /**
  * insert_node - Write a function in C that inserts a number into a sorted
