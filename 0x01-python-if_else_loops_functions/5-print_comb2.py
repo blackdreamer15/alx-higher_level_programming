@@ -5,6 +5,6 @@ for num in range(0, 100):
         print("{0:d}".format(num), end=", ")
     else:
         if num == 99:
-            print("{0:d}".format(num))
+            print(f"{num:d}")
         else:
             print(f"{0:d}".format(num), end=", ")
