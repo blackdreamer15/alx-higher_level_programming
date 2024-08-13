@@ -1,16 +1,23 @@
-$(document).ready(function () {
-	$("INPUT#btn_translate").click(function () {
-		const languageCode = $("INPUT#language_code").val();
-		const url = "https://www.fourtonfish.com/hellosalut/hello/" + languageCode;
+$(function () {
+  // Function to fetch and display translation
+  function fetchTranslation () {
+    const langCode = $('#language_code').val();
+    const url = 'https://www.fourtonfish.com/hellosalut/hello/?lang=' + langCode;
 
-		$.get(url, function (data) {
-			$("DIV#hello").text(data.hello);
-		});
-	});
+    $.get(url, function (data) {
+      $('#hello').text(data.hello);
+    });
+  }
 
-	$("INPUT#language_code").keypress(function (event) {
-		if (event.which === 13) {
-			$("INPUT#btn_translate").click();
-		}
-	});
+  // Click event for button
+  $('#btn_translate').on('click', function () {
+    fetchTranslation();
+  });
+
+  // Keypress event for input field (Enter key detection)
+  $('#language_code').on('keypress', function (event) {
+    if (event.which === 13) { // Enter key code
+      fetchTranslation();
+    }
+  });
 });
